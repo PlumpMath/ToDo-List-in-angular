@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="node_modules/angular/angular.js"></script>
+  <title></title>
+</head>
+<body ng-app="appName">
+
+<!-- <div ng-controller="namesCtrl">
+  First Name: <input type="text" ng-model="fName">
+  Last Name: <input type="text" ng-model="lName">
+  <input type="submit" value="Add Name" ng-click="work()">
+  
+  <ul ng-controller="namesCtrl">
+    <li ng-repeat="name in names | orderBy: 'name'">{{name.lname}}, {{name.name}}</li>
+  </ul>
+</div> -->
+
+
+<h2>ToDoList</h2>
+
+<div ng-controller="fuuuck">
+  <form>
+    <input type="text" ng-model="newtodo">
+    <button ng-click="addnew()"> Add it! </button>
+  </form>
+  <li ng-repeat="f in ben track by $index">
+    <input type="checkbox">
+    {{f}}
+    <button ng-click="removeone($index)"> Remove it! </button>
+  </li>
+</div>
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
